@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# Lost UserBot - Yusuf Usta
+# Lost UserBot - Mustafa Usta
 
 # Turkish word meaning. Only Turkish. Coded @By_Azade, Lost uyarlaması @qulec
 #

@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# Lost UserBot - Yusuf Usta
+# Lost UserBot - Mustafa Usta
 
 
 """ Diğer kategorilere uymayan fazlalık komutların yer aldığı modül. """
@@ -886,7 +886,7 @@ def deEmojify(inputString):
 CmdHelp('scrapers').add_command(
     'img', '<limit> <kelime>', 'Google üzerinde hızlı bir resim araması yapar. Limit yazmazsanız 5 tane fotoğraf getirir.', 'img10 system of a down'
 ).add_command(
-    'currency', '<miktar> <dönüştürülecek birim> <dönüşecek birim>', 'Yusufun Türk Lirası Botu gibi, ama boş kaldığında kızlara yazmıyor.'
+    'currency', '<miktar> <dönüştürülecek birim> <dönüşecek birim>', 'Mustafaun Türk Lirası Botu gibi, ama boş kaldığında kızlara yazmıyor.'
 ).add_command(
     'carbon', '<metin>', 'carbon.now.sh sitesini kullanarak yazdıklarının aşşşşşşırı şekil görünmesini sağlar.'
 ).add_command(

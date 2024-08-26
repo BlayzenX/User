@@ -5,7 +5,7 @@
 #
 
 # Thanks github.com/spechide for creating inline bot support.
-# Lost UserBot - Yusuf Usta
+# Lost UserBot - Mustafa Usta
 """ UserBot hazırlanışı. """
 
 import os
@@ -334,7 +334,7 @@ Hesabınızı bot'a çevirebilirsiniz ve bunları kullanabilirsiniz. Unutmayın,
                         [custom.Button.url("Kanala Katıl", "https://t.me/LostUserBot"), custom.Button.url(
                             "Gruba Katıl", "https://t.me/LostSupport")],
                         [custom.Button.url(
-                            "GitHub", "https://github.com/yusufusta/LostUserBot")]
+                            "GitHub", "https://github.com/Mustafausta/LostUserBot")]
                     ],
                     link_preview=False
                 )

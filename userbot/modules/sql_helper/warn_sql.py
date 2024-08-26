@@ -1,5 +1,5 @@
 # WARN PLUGIN #
-# CODED BY YUSUF USTA #
+# CODED BY Mustafa USTA #
 
 import threading
 from sqlalchemy import func, distinct, Column, String, UnicodeText, Integer

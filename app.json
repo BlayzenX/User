@@ -10,8 +10,8 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/yusufusta/LostUserbot",
-  "website":   "https://yusufusta.net/",
+  "repository": "https://github.com/Mustafausta/LostUserbot",
+  "website":   "https://Mustafausta.net/",
   "success_url": "https://t.me/LostSupport",
   "stack": "container",
   "env": {
@@ -54,7 +54,7 @@
     },
     "UPSTREAM_REPO_URL": {
       "description": "Fork sağlamanız durumunda repo URL'nizi buraya ekleyin. Varsayılan olarak kendi repo adresimiz eklidir.",
-      "value": "https://github.com/yusufusta/LostUserBot",
+      "value": "https://github.com/Mustafausta/LostUserBot",
       "required": true
     },
     "COUNTRY": {
