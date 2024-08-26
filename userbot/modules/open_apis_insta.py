@@ -25,7 +25,7 @@ async def apis(event):
         else:
             url = txt[1]
     except IndexError:
-        return await event.edit("**Lütfen Kullanım Talimatını Okuyun!** >> `.asena insta`")
+        return await event.edit("**Lütfen Kullanım Talimatını Okuyun!** >> `.Lost insta`")
 
     if model == "post" or model == "igtv":
         await event.edit("__Medya Aranıyor..__")
@@ -86,561 +86,561 @@ async def apis(event):
                                                     if post2 == " ":
                                                         if html2["data"]["post1"]["type"] == "jpg" or html2["data"]["post1"]["type"] == "png":
                                                             await downloader(post1, "./insta1.jpg")
-                                                            await event.client.send_file(event.chat_id, './insta1.jpg', caption="@AsenaUserBot ile Yüklendi.")
+                                                            await event.client.send_file(event.chat_id, './insta1.jpg', caption="@LostUserBot ile Yüklendi.")
                                                             await delFile("./insta1.jpg")
 
                                                         else:
                                                             await downloader(post1, "./insta1.mp4")
-                                                            await event.client.send_file(event.chat_id, './insta1.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                                                            await event.client.send_file(event.chat_id, './insta1.mp4', caption="@LostUserBot ile Yüklendi.")
                                                             await delFile("./insta1.mp4")
 
                                                     else:
                                                         if html2["data"]["post1"]["type"] == "jpg" or html2["data"]["post2"]["type"] == "png":
                                                             await downloader(post1, "./insta1.jpg")
-                                                            await event.client.send_file(event.chat_id, './insta1.jpg', caption="@AsenaUserBot ile Yüklendi.")
+                                                            await event.client.send_file(event.chat_id, './insta1.jpg', caption="@LostUserBot ile Yüklendi.")
                                                             await delFile("./insta1.jpg")
 
                                                         else:
                                                             await downloader(post1, "./insta1.mp4")
-                                                            await event.client.send_file(event.chat_id, './insta1.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                                                            await event.client.send_file(event.chat_id, './insta1.mp4', caption="@LostUserBot ile Yüklendi.")
                                                             await delFile("./insta1.mp4")
 
                                                         if html2["data"]["post2"]["type"] == "jpg" or html2["data"]["post2"]["type"] == "png":
                                                             await downloader(post2, "./insta2.jpg")
-                                                            await event.client.send_file(event.chat_id, './insta2.jpg', caption="@AsenaUserBot ile Yüklendi.")
+                                                            await event.client.send_file(event.chat_id, './insta2.jpg', caption="@LostUserBot ile Yüklendi.")
                                                             await delFile("./insta2.jpg")
 
                                                         else:
                                                             await downloader(post2, "./insta2.mp4")
-                                                            await event.client.send_file(event.chat_id, './insta2.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                                                            await event.client.send_file(event.chat_id, './insta2.mp4', caption="@LostUserBot ile Yüklendi.")
                                                             await delFile("./insta2.mp4")
 
                                                 else:
                                                     if html2["data"]["post1"]["type"] == "jpg" or html2["data"]["post1"]["type"] == "png":
                                                         # os.system("wget -O {0} {1}".format("./insta1.jpeg", post1))
                                                         await downloader(post1, "./insta1.jpeg")
-                                                        await event.client.send_file(event.chat_id, './insta1.jpeg', caption="@AsenaUserBot ile Yüklendi.")
+                                                        await event.client.send_file(event.chat_id, './insta1.jpeg', caption="@LostUserBot ile Yüklendi.")
                                                         await delFile("./insta1.jpeg")
 
                                                     else:
                                                         await downloader(post2, "./insta1.mp4")
-                                                        await event.client.send_file(event.chat_id, './insta1.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                                                        await event.client.send_file(event.chat_id, './insta1.mp4', caption="@LostUserBot ile Yüklendi.")
                                                         await delFile("./insta1.mp4")
 
                                                     if html2["data"]["post2"]["type"] == "jpg" or html2["data"]["post2"]["type"] == "png":
                                                         # os.system("wget -O {0} {1}".format("./insta2.jpeg", post2))
                                                         await downloader(post2, "./insta2.jpeg")
-                                                        await event.client.send_file(event.chat_id, './insta2.jpeg', caption="@AsenaUserBot ile Yüklendi.")
+                                                        await event.client.send_file(event.chat_id, './insta2.jpeg', caption="@LostUserBot ile Yüklendi.")
                                                         await delFile("./insta2.jpeg")
 
                                                     else:
                                                         await downloader(post2, "./insta2.mp4")
-                                                        await event.client.send_file(event.chat_id, './insta2.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                                                        await event.client.send_file(event.chat_id, './insta2.mp4', caption="@LostUserBot ile Yüklendi.")
                                                         await delFile("./insta2.mp4")
 
                                                     if html2["data"]["post3"]["type"] == "jpg" or html2["data"]["post3"]["type"] == "png":
                                                         # os.system("wget -O {0} {1}".format("./insta3.jpeg", post3))
                                                         await downloader(post3, "./insta3.jpeg")
-                                                        await event.client.send_file(event.chat_id, './insta3.jpeg', caption="@AsenaUserBot ile Yüklendi.")
+                                                        await event.client.send_file(event.chat_id, './insta3.jpeg', caption="@LostUserBot ile Yüklendi.")
                                                         await delFile("./insta3.jpeg")
 
                                                     else:
                                                         await downloader(post3, "./insta3.mp4")
-                                                        await event.client.send_file(event.chat_id, './insta3.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                                                        await event.client.send_file(event.chat_id, './insta3.mp4', caption="@LostUserBot ile Yüklendi.")
                                                         await delFile("./insta3.mp4")
                                             else:
                                                 if html2["data"]["post1"]["type"] == "jpg" or html2["data"]["post1"]["type"] == "png":
                                                     await downloader(post1, "./insta1.jpg")
-                                                    await event.client.send_file(event.chat_id, './insta1.jpg', caption="@AsenaUserBot ile Yüklendi.")
+                                                    await event.client.send_file(event.chat_id, './insta1.jpg', caption="@LostUserBot ile Yüklendi.")
                                                     await delFile("./insta1.jpg")
 
                                                 else:
                                                     await downloader(post2, "./insta1.mp4")
-                                                    await event.client.send_file(event.chat_id, './insta1.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                                                    await event.client.send_file(event.chat_id, './insta1.mp4', caption="@LostUserBot ile Yüklendi.")
                                                     await delFile("./insta1.mp4")
 
                                                 if html2["data"]["post2"]["type"] == "jpg" or html2["data"]["post2"]["type"] == "png":
                                                     await downloader(post2, "./insta2.jpg")
-                                                    await event.client.send_file(event.chat_id, './insta2.jpg', caption="@AsenaUserBot ile Yüklendi.")
+                                                    await event.client.send_file(event.chat_id, './insta2.jpg', caption="@LostUserBot ile Yüklendi.")
                                                     await delFile("./insta2.jpg")
 
                                                 else:
                                                     await downloader(post2, "./insta2.mp4")
-                                                    await event.client.send_file(event.chat_id, './insta2.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                                                    await event.client.send_file(event.chat_id, './insta2.mp4', caption="@LostUserBot ile Yüklendi.")
                                                     await delFile("./insta2.mp4")
 
                                                 if html2["data"]["post3"]["type"] == "jpg" or html2["data"]["post3"]["type"] == "png":
                                                     await downloader(post3, "./insta3.jpg")
-                                                    await event.client.send_file(event.chat_id, './insta3.jpg', caption="@AsenaUserBot ile Yüklendi.")
+                                                    await event.client.send_file(event.chat_id, './insta3.jpg', caption="@LostUserBot ile Yüklendi.")
                                                     await delFile("./insta3.jpg")
 
                                                 else:
                                                     await downloader(post3, "./insta3.mp4")
-                                                    await event.client.send_file(event.chat_id, './insta3.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                                                    await event.client.send_file(event.chat_id, './insta3.mp4', caption="@LostUserBot ile Yüklendi.")
                                                     await delFile("./insta3.mp4")
 
                                                 if html2["data"]["post4"]["type"] == "jpg" or html2["data"]["post4"]["type"] == "png":
                                                     await downloader(post4, "./insta4.jpg")
-                                                    await event.client.send_file(event.chat_id, './insta4.jpg', caption="@AsenaUserBot ile Yüklendi.")
+                                                    await event.client.send_file(event.chat_id, './insta4.jpg', caption="@LostUserBot ile Yüklendi.")
                                                     await delFile("./insta4.jpg")
 
                                                 else:
                                                     await downloader(post4, "./insta4.mp4")
-                                                    await event.client.send_file(event.chat_id, './insta4.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                                                    await event.client.send_file(event.chat_id, './insta4.mp4', caption="@LostUserBot ile Yüklendi.")
                                                     await delFile("./insta4.mp4")
                                         else:
                                             if html2["data"]["post1"]["type"] == "jpg" or html2["data"]["post1"]["type"] == "png":
                                                 await downloader(post1, "./insta1.jpg")
-                                                await event.client.send_file(event.chat_id, './insta1.jpg', caption="@AsenaUserBot ile Yüklendi.")
+                                                await event.client.send_file(event.chat_id, './insta1.jpg', caption="@LostUserBot ile Yüklendi.")
                                                 await delFile("./insta1.jpg")
 
                                             else:
                                                 await downloader(post2, "./insta1.mp4")
-                                                await event.client.send_file(event.chat_id, './insta1.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                                                await event.client.send_file(event.chat_id, './insta1.mp4', caption="@LostUserBot ile Yüklendi.")
                                                 await delFile("./insta1.mp4")
 
                                             if html2["data"]["post2"]["type"] == "jpg" or html2["data"]["post2"]["type"] == "png":
                                                 await downloader(post2, "./insta2.jpg")
-                                                await event.client.send_file(event.chat_id, './insta2.jpg', caption="@AsenaUserBot ile Yüklendi.")
+                                                await event.client.send_file(event.chat_id, './insta2.jpg', caption="@LostUserBot ile Yüklendi.")
                                                 await delFile("./insta2.jpg")
 
                                             else:
                                                 await downloader(post2, "./insta2.mp4")
-                                                await event.client.send_file(event.chat_id, './insta2.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                                                await event.client.send_file(event.chat_id, './insta2.mp4', caption="@LostUserBot ile Yüklendi.")
                                                 await delFile("./insta2.mp4")
 
                                             if html2["data"]["post3"]["type"] == "jpg" or html2["data"]["post3"]["type"] == "png":
                                                 await downloader(post3, "./insta3.jpg")
-                                                await event.client.send_file(event.chat_id, './insta3.jpg', caption="@AsenaUserBot ile Yüklendi.")
+                                                await event.client.send_file(event.chat_id, './insta3.jpg', caption="@LostUserBot ile Yüklendi.")
                                                 await delFile("./insta3.jpg")
 
                                             else:
                                                 await downloader(post3, "./insta3.mp4")
-                                                await event.client.send_file(event.chat_id, './insta3.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                                                await event.client.send_file(event.chat_id, './insta3.mp4', caption="@LostUserBot ile Yüklendi.")
                                                 await delFile("./insta3.mp4")
 
                                             if html2["data"]["post4"]["type"] == "jpg" or html2["data"]["post4"]["type"] == "png":
                                                 await downloader(post4, "./insta4.jpg")
-                                                await event.client.send_file(event.chat_id, './insta4.jpg', caption="@AsenaUserBot ile Yüklendi.")
+                                                await event.client.send_file(event.chat_id, './insta4.jpg', caption="@LostUserBot ile Yüklendi.")
                                                 await delFile("./insta4.jpg")
 
                                             else:
                                                 await downloader(post4, "./insta4.mp4")
-                                                await event.client.send_file(event.chat_id, './insta4.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                                                await event.client.send_file(event.chat_id, './insta4.mp4', caption="@LostUserBot ile Yüklendi.")
                                                 await delFile("./insta4.mp4")
 
                                             if html2["data"]["post5"]["type"] == "jpg" or html2["data"]["post5"]["type"] == "png":
                                                 await downloader(post5, "./insta5.jpg")
-                                                await event.client.send_file(event.chat_id, './insta5.jpg', caption="@AsenaUserBot ile Yüklendi.")
+                                                await event.client.send_file(event.chat_id, './insta5.jpg', caption="@LostUserBot ile Yüklendi.")
                                                 await delFile("./insta5.jpg")
 
                                             else:
                                                 await downloader(post5, "./insta5.mp4")
-                                                await event.client.send_file(event.chat_id, './insta5.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                                                await event.client.send_file(event.chat_id, './insta5.mp4', caption="@LostUserBot ile Yüklendi.")
                                                 await delFile("./insta5.mp4")
                                     else:
                                         if html2["data"]["post1"]["type"] == "jpg" or html2["data"]["post1"]["type"] == "png":
                                             await downloader(post1, "./insta1.jpg")
-                                            await event.client.send_file(event.chat_id, './insta1.jpg', caption="@AsenaUserBot ile Yüklendi.")
+                                            await event.client.send_file(event.chat_id, './insta1.jpg', caption="@LostUserBot ile Yüklendi.")
                                             await delFile("./insta1.jpg")
 
                                         else:
                                             await downloader(post2, "./insta1.mp4")
-                                            await event.client.send_file(event.chat_id, './insta1.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                                            await event.client.send_file(event.chat_id, './insta1.mp4', caption="@LostUserBot ile Yüklendi.")
                                             await delFile("./insta1.mp4")
 
                                         if html2["data"]["post2"]["type"] == "jpg" or html2["data"]["post2"]["type"] == "png":
                                             await downloader(post2, "./insta2.jpg")
-                                            await event.client.send_file(event.chat_id, './insta2.jpg', caption="@AsenaUserBot ile Yüklendi.")
+                                            await event.client.send_file(event.chat_id, './insta2.jpg', caption="@LostUserBot ile Yüklendi.")
                                             await delFile("./insta2.jpg")
 
                                         else:
                                             await downloader(post2, "./insta2.mp4")
-                                            await event.client.send_file(event.chat_id, './insta2.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                                            await event.client.send_file(event.chat_id, './insta2.mp4', caption="@LostUserBot ile Yüklendi.")
                                             await delFile("./insta2.mp4")
 
                                         if html2["data"]["post3"]["type"] == "jpg" or html2["data"]["post3"]["type"] == "png":
                                             await downloader(post3, "./insta3.jpg")
-                                            await event.client.send_file(event.chat_id, './insta3.jpg', caption="@AsenaUserBot ile Yüklendi.")
+                                            await event.client.send_file(event.chat_id, './insta3.jpg', caption="@LostUserBot ile Yüklendi.")
                                             await delFile("./insta3.jpg")
 
                                         else:
                                             await downloader(post3, "./insta3.mp4")
-                                            await event.client.send_file(event.chat_id, './insta3.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                                            await event.client.send_file(event.chat_id, './insta3.mp4', caption="@LostUserBot ile Yüklendi.")
                                             await delFile("./insta3.mp4")
 
                                         if html2["data"]["post4"]["type"] == "jpg" or html2["data"]["post4"]["type"] == "png":
                                             await downloader(post4, "./insta4.jpg")
-                                            await event.client.send_file(event.chat_id, './insta4.jpg', caption="@AsenaUserBot ile Yüklendi.")
+                                            await event.client.send_file(event.chat_id, './insta4.jpg', caption="@LostUserBot ile Yüklendi.")
                                             await delFile("./insta4.jpg")
 
                                         else:
                                             await downloader(post4, "./insta4.mp4")
-                                            await event.client.send_file(event.chat_id, './insta4.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                                            await event.client.send_file(event.chat_id, './insta4.mp4', caption="@LostUserBot ile Yüklendi.")
                                             await delFile("./insta4.mp4")
 
                                         if html2["data"]["post5"]["type"] == "jpg" or html2["data"]["post5"]["type"] == "png":
                                             await downloader(post5, "./insta5.jpg")
-                                            await event.client.send_file(event.chat_id, './insta5.jpg', caption="@AsenaUserBot ile Yüklendi.")
+                                            await event.client.send_file(event.chat_id, './insta5.jpg', caption="@LostUserBot ile Yüklendi.")
                                             await delFile("./insta5.jpg")
 
                                         else:
                                             await downloader(post5, "./insta5.mp4")
-                                            await event.client.send_file(event.chat_id, './insta5.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                                            await event.client.send_file(event.chat_id, './insta5.mp4', caption="@LostUserBot ile Yüklendi.")
                                             await delFile("./insta5.mp4")
 
                                         if html2["data"]["post6"]["type"] == "jpg" or html2["data"]["post6"]["type"] == "png":
                                             await downloader(post6, "./insta6.jpg")
-                                            await event.client.send_file(event.chat_id, './insta6.jpg', caption="@AsenaUserBot ile Yüklendi.")
+                                            await event.client.send_file(event.chat_id, './insta6.jpg', caption="@LostUserBot ile Yüklendi.")
                                             await delFile("./insta6.jpg")
 
                                         else:
                                             await downloader(post6, "./insta6.mp4")
-                                            await event.client.send_file(event.chat_id, './insta6.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                                            await event.client.send_file(event.chat_id, './insta6.mp4', caption="@LostUserBot ile Yüklendi.")
                                             await delFile("./insta6.mp4")
 
                                 else:
                                     if html2["data"]["post1"]["type"] == "jpg" or html2["data"]["post1"]["type"] == "png":
                                         await downloader(post1, "./insta1.jpg")
-                                        await event.client.send_file(event.chat_id, './insta1.jpg', caption="@AsenaUserBot ile Yüklendi.")
+                                        await event.client.send_file(event.chat_id, './insta1.jpg', caption="@LostUserBot ile Yüklendi.")
                                         await delFile("./insta1.jpg")
 
                                     else:
                                         await downloader(post2, "./insta1.mp4")
-                                        await event.client.send_file(event.chat_id, './insta1.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                                        await event.client.send_file(event.chat_id, './insta1.mp4', caption="@LostUserBot ile Yüklendi.")
                                         await delFile("./insta1.mp4")
 
                                     if html2["data"]["post2"]["type"] == "jpg" or html2["data"]["post2"]["type"] == "png":
                                         await downloader(post2, "./insta2.jpg")
-                                        await event.client.send_file(event.chat_id, './insta2.jpg', caption="@AsenaUserBot ile Yüklendi.")
+                                        await event.client.send_file(event.chat_id, './insta2.jpg', caption="@LostUserBot ile Yüklendi.")
                                         await delFile("./insta2.jpg")
 
                                     else:
                                         await downloader(post2, "./insta2.mp4")
-                                        await event.client.send_file(event.chat_id, './insta2.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                                        await event.client.send_file(event.chat_id, './insta2.mp4', caption="@LostUserBot ile Yüklendi.")
                                         await delFile("./insta2.mp4")
 
                                     if html2["data"]["post3"]["type"] == "jpg" or html2["data"]["post3"]["type"] == "png":
                                         await downloader(post3, "./insta3.jpg")
-                                        await event.client.send_file(event.chat_id, './insta3.jpg', caption="@AsenaUserBot ile Yüklendi.")
+                                        await event.client.send_file(event.chat_id, './insta3.jpg', caption="@LostUserBot ile Yüklendi.")
                                         await delFile("./insta3.jpg")
 
                                     else:
                                         await downloader(post3, "./insta3.mp4")
-                                        await event.client.send_file(event.chat_id, './insta3.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                                        await event.client.send_file(event.chat_id, './insta3.mp4', caption="@LostUserBot ile Yüklendi.")
                                         await delFile("./insta3.mp4")
 
                                     if html2["data"]["post4"]["type"] == "jpg" or html2["data"]["post4"]["type"] == "png":
                                         await downloader(post4, "./insta4.jpg")
-                                        await event.client.send_file(event.chat_id, './insta4.jpg', caption="@AsenaUserBot ile Yüklendi.")
+                                        await event.client.send_file(event.chat_id, './insta4.jpg', caption="@LostUserBot ile Yüklendi.")
                                         await delFile("./insta4.jpg")
 
                                     else:
                                         await downloader(post4, "./insta4.mp4")
-                                        await event.client.send_file(event.chat_id, './insta4.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                                        await event.client.send_file(event.chat_id, './insta4.mp4', caption="@LostUserBot ile Yüklendi.")
                                         await delFile("./insta4.mp4")
 
                                     if html2["data"]["post5"]["type"] == "jpg" or html2["data"]["post5"]["type"] == "png":
                                         await downloader(post5, "./insta5.jpg")
-                                        await event.client.send_file(event.chat_id, './insta5.jpg', caption="@AsenaUserBot ile Yüklendi.")
+                                        await event.client.send_file(event.chat_id, './insta5.jpg', caption="@LostUserBot ile Yüklendi.")
                                         await delFile("./insta5.jpg")
 
                                     else:
                                         await downloader(post5, "./insta5.mp4")
-                                        await event.client.send_file(event.chat_id, './insta5.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                                        await event.client.send_file(event.chat_id, './insta5.mp4', caption="@LostUserBot ile Yüklendi.")
                                         await delFile("./insta5.mp4")
 
                                     if html2["data"]["post6"]["type"] == "jpg" or html2["data"]["post6"]["type"] == "png":
                                         await downloader(post6, "./insta6.jpg")
-                                        await event.client.send_file(event.chat_id, './insta6.jpg', caption="@AsenaUserBot ile Yüklendi.")
+                                        await event.client.send_file(event.chat_id, './insta6.jpg', caption="@LostUserBot ile Yüklendi.")
                                         await delFile("./insta6.jpg")
 
                                     else:
                                         await downloader(post6, "./insta6.mp4")
-                                        await event.client.send_file(event.chat_id, './insta6.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                                        await event.client.send_file(event.chat_id, './insta6.mp4', caption="@LostUserBot ile Yüklendi.")
                                         await delFile("./insta6.mp4")
 
                                     if html2["data"]["post7"]["type"] == "jpg" or html2["data"]["post7"]["type"] == "png":
                                         await downloader(post7, "./insta7.jpg")
-                                        await event.client.send_file(event.chat_id, './insta7.jpg', caption="@AsenaUserBot ile Yüklendi.")
+                                        await event.client.send_file(event.chat_id, './insta7.jpg', caption="@LostUserBot ile Yüklendi.")
                                         await delFile("./insta7.jpg")
 
                                     else:
                                         await downloader(post7, "./insta7.mp4")
-                                        await event.client.send_file(event.chat_id, './insta7.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                                        await event.client.send_file(event.chat_id, './insta7.mp4', caption="@LostUserBot ile Yüklendi.")
                                         await delFile("./insta7.mp4")
 
                             else:
                                 if html2["data"]["post1"]["type"] == "jpg" or html2["data"]["post1"]["type"] == "png":
                                     await downloader(post1, "./insta1.jpg")
-                                    await event.client.send_file(event.chat_id, './insta1.jpg', caption="@AsenaUserBot ile Yüklendi.")
+                                    await event.client.send_file(event.chat_id, './insta1.jpg', caption="@LostUserBot ile Yüklendi.")
                                     await delFile("./insta1.jpg")
 
                                 else:
                                     await downloader(post2, "./insta1.mp4")
-                                    await event.client.send_file(event.chat_id, './insta1.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                                    await event.client.send_file(event.chat_id, './insta1.mp4', caption="@LostUserBot ile Yüklendi.")
                                     await delFile("./insta1.mp4")
 
                                 if html2["data"]["post2"]["type"] == "jpg" or html2["data"]["post2"]["type"] == "png":
                                     await downloader(post2, "./insta2.jpg")
-                                    await event.client.send_file(event.chat_id, './insta2.jpg', caption="@AsenaUserBot ile Yüklendi.")
+                                    await event.client.send_file(event.chat_id, './insta2.jpg', caption="@LostUserBot ile Yüklendi.")
                                     await delFile("./insta2.jpg")
 
                                 else:
                                     await downloader(post2, "./insta2.mp4")
-                                    await event.client.send_file(event.chat_id, './insta2.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                                    await event.client.send_file(event.chat_id, './insta2.mp4', caption="@LostUserBot ile Yüklendi.")
                                     await delFile("./insta2.mp4")
 
                                 if html2["data"]["post3"]["type"] == "jpg" or html2["data"]["post3"]["type"] == "png":
                                     await downloader(post3, "./insta3.jpg")
-                                    await event.client.send_file(event.chat_id, './insta3.jpg', caption="@AsenaUserBot ile Yüklendi.")
+                                    await event.client.send_file(event.chat_id, './insta3.jpg', caption="@LostUserBot ile Yüklendi.")
                                     await delFile("./insta3.jpg")
 
                                 else:
                                     await downloader(post3, "./insta3.mp4")
-                                    await event.client.send_file(event.chat_id, './insta3.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                                    await event.client.send_file(event.chat_id, './insta3.mp4', caption="@LostUserBot ile Yüklendi.")
                                     await delFile("./insta3.mp4")
 
                                 if html2["data"]["post4"]["type"] == "jpg" or html2["data"]["post4"]["type"] == "png":
                                     await downloader(post4, "./insta4.jpg")
-                                    await event.client.send_file(event.chat_id, './insta4.jpg', caption="@AsenaUserBot ile Yüklendi.")
+                                    await event.client.send_file(event.chat_id, './insta4.jpg', caption="@LostUserBot ile Yüklendi.")
                                     await delFile("./insta4.jpg")
 
                                 else:
                                     await downloader(post4, "./insta4.mp4")
-                                    await event.client.send_file(event.chat_id, './insta4.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                                    await event.client.send_file(event.chat_id, './insta4.mp4', caption="@LostUserBot ile Yüklendi.")
                                     await delFile("./insta4.mp4")
 
                                 if html2["data"]["post5"]["type"] == "jpg" or html2["data"]["post5"]["type"] == "png":
                                     await downloader(post5, "./insta5.jpg")
-                                    await event.client.send_file(event.chat_id, './insta5.jpg', caption="@AsenaUserBot ile Yüklendi.")
+                                    await event.client.send_file(event.chat_id, './insta5.jpg', caption="@LostUserBot ile Yüklendi.")
                                     await delFile("./insta5.jpg")
 
                                 else:
                                     await downloader(post5, "./insta5.mp4")
-                                    await event.client.send_file(event.chat_id, './insta5.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                                    await event.client.send_file(event.chat_id, './insta5.mp4', caption="@LostUserBot ile Yüklendi.")
                                     await delFile("./insta5.mp4")
 
                                 if html2["data"]["post6"]["type"] == "jpg" or html2["data"]["post6"]["type"] == "png":
                                     await downloader(post6, "./insta6.jpg")
-                                    await event.client.send_file(event.chat_id, './insta6.jpg', caption="@AsenaUserBot ile Yüklendi.")
+                                    await event.client.send_file(event.chat_id, './insta6.jpg', caption="@LostUserBot ile Yüklendi.")
                                     await delFile("./insta6.jpg")
 
                                 else:
                                     await downloader(post6, "./insta6.mp4")
-                                    await event.client.send_file(event.chat_id, './insta6.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                                    await event.client.send_file(event.chat_id, './insta6.mp4', caption="@LostUserBot ile Yüklendi.")
                                     await delFile("./insta6.mp4")
 
                                 if html2["data"]["post7"]["type"] == "jpg" or html2["data"]["post7"]["type"] == "png":
                                     await downloader(post7, "./insta7.jpg")
-                                    await event.client.send_file(event.chat_id, './insta7.jpg', caption="@AsenaUserBot ile Yüklendi.")
+                                    await event.client.send_file(event.chat_id, './insta7.jpg', caption="@LostUserBot ile Yüklendi.")
                                     await delFile("./insta7.jpg")
 
                                 else:
                                     await downloader(post7, "./insta7.mp4")
-                                    await event.client.send_file(event.chat_id, './insta7.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                                    await event.client.send_file(event.chat_id, './insta7.mp4', caption="@LostUserBot ile Yüklendi.")
                                     await delFile("./insta7.mp4")
 
                                 if html2["data"]["post8"]["type"] == "jpg" or html2["data"]["post8"]["type"] == "png":
                                     await downloader(post8, "./insta8.jpg")
-                                    await event.client.send_file(event.chat_id, './insta8.jpg', caption="@AsenaUserBot ile Yüklendi.")
+                                    await event.client.send_file(event.chat_id, './insta8.jpg', caption="@LostUserBot ile Yüklendi.")
                                     await delFile("./insta8.jpg")
 
                                 else:
                                     await downloader(post8, "./insta8.mp4")
-                                    await event.client.send_file(event.chat_id, './insta8.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                                    await event.client.send_file(event.chat_id, './insta8.mp4', caption="@LostUserBot ile Yüklendi.")
                                     await delFile("./insta8.mp4")
 
                         else:
                             if html2["data"]["post1"]["type"] == "jpg" or html2["data"]["post1"]["type"] == "png":
                                 await downloader(post1, "./insta1.jpg")
-                                await event.client.send_file(event.chat_id, './insta1.jpg', caption="@AsenaUserBot ile Yüklendi.")
+                                await event.client.send_file(event.chat_id, './insta1.jpg', caption="@LostUserBot ile Yüklendi.")
                                 await delFile("./insta1.jpg")
 
                             else:
                                 await downloader(post2, "./insta1.mp4")
-                                await event.client.send_file(event.chat_id, './insta1.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                                await event.client.send_file(event.chat_id, './insta1.mp4', caption="@LostUserBot ile Yüklendi.")
                                 await delFile("./insta1.mp4")
 
                             if html2["data"]["post2"]["type"] == "jpg" or html2["data"]["post2"]["type"] == "png":
                                 await downloader(post2, "./insta2.jpg")
-                                await event.client.send_file(event.chat_id, './insta2.jpg', caption="@AsenaUserBot ile Yüklendi.")
+                                await event.client.send_file(event.chat_id, './insta2.jpg', caption="@LostUserBot ile Yüklendi.")
                                 await delFile("./insta2.jpg")
 
                             else:
                                 await downloader(post2, "./insta2.mp4")
-                                await event.client.send_file(event.chat_id, './insta2.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                                await event.client.send_file(event.chat_id, './insta2.mp4', caption="@LostUserBot ile Yüklendi.")
                                 await delFile("./insta2.mp4")
 
                             if html2["data"]["post3"]["type"] == "jpg" or html2["data"]["post3"]["type"] == "png":
                                 await downloader(post3, "./insta3.jpg")
-                                await event.client.send_file(event.chat_id, './insta3.jpg', caption="@AsenaUserBot ile Yüklendi.")
+                                await event.client.send_file(event.chat_id, './insta3.jpg', caption="@LostUserBot ile Yüklendi.")
                                 await delFile("./insta3.jpg")
 
                             else:
                                 await downloader(post3, "./insta3.mp4")
-                                await event.client.send_file(event.chat_id, './insta3.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                                await event.client.send_file(event.chat_id, './insta3.mp4', caption="@LostUserBot ile Yüklendi.")
                                 await delFile("./insta3.mp4")
 
                             if html2["data"]["post4"]["type"] == "jpg" or html2["data"]["post4"]["type"] == "png":
                                 await downloader(post4, "./insta4.jpg")
-                                await event.client.send_file(event.chat_id, './insta4.jpg', caption="@AsenaUserBot ile Yüklendi.")
+                                await event.client.send_file(event.chat_id, './insta4.jpg', caption="@LostUserBot ile Yüklendi.")
                                 await delFile("./insta4.jpg")
 
                             else:
                                 await downloader(post4, "./insta4.mp4")
-                                await event.client.send_file(event.chat_id, './insta4.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                                await event.client.send_file(event.chat_id, './insta4.mp4', caption="@LostUserBot ile Yüklendi.")
                                 await delFile("./insta4.mp4")
 
                             if html2["data"]["post5"]["type"] == "jpg" or html2["data"]["post5"]["type"] == "png":
                                 await downloader(post5, "./insta5.jpg")
-                                await event.client.send_file(event.chat_id, './insta5.jpg', caption="@AsenaUserBot ile Yüklendi.")
+                                await event.client.send_file(event.chat_id, './insta5.jpg', caption="@LostUserBot ile Yüklendi.")
                                 await delFile("./insta5.jpg")
 
                             else:
                                 await downloader(post5, "./insta5.mp4")
-                                await event.client.send_file(event.chat_id, './insta5.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                                await event.client.send_file(event.chat_id, './insta5.mp4', caption="@LostUserBot ile Yüklendi.")
                                 await delFile("./insta5.mp4")
 
                             if html2["data"]["post6"]["type"] == "jpg" or html2["data"]["post6"]["type"] == "png":
                                 await downloader(post6, "./insta6.jpg")
-                                await event.client.send_file(event.chat_id, './insta6.jpg', caption="@AsenaUserBot ile Yüklendi.")
+                                await event.client.send_file(event.chat_id, './insta6.jpg', caption="@LostUserBot ile Yüklendi.")
                                 await delFile("./insta6.jpg")
 
                             else:
                                 await downloader(post6, "./insta6.mp4")
-                                await event.client.send_file(event.chat_id, './insta6.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                                await event.client.send_file(event.chat_id, './insta6.mp4', caption="@LostUserBot ile Yüklendi.")
                                 await delFile("./insta6.mp4")
 
                             if html2["data"]["post7"]["type"] == "jpg" or html2["data"]["post7"]["type"] == "png":
                                 await downloader(post7, "./insta7.jpg")
-                                await event.client.send_file(event.chat_id, './insta7.jpg', caption="@AsenaUserBot ile Yüklendi.")
+                                await event.client.send_file(event.chat_id, './insta7.jpg', caption="@LostUserBot ile Yüklendi.")
                                 await delFile("./insta7.jpg")
 
                             else:
                                 await downloader(post7, "./insta7.mp4")
-                                await event.client.send_file(event.chat_id, './insta7.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                                await event.client.send_file(event.chat_id, './insta7.mp4', caption="@LostUserBot ile Yüklendi.")
                                 await delFile("./insta7.mp4")
 
                             if html2["data"]["post8"]["type"] == "jpg" or html2["data"]["post8"]["type"] == "png":
                                 await downloader(post8, "./insta8.jpg")
-                                await event.client.send_file(event.chat_id, './insta8.jpg', caption="@AsenaUserBot ile Yüklendi.")
+                                await event.client.send_file(event.chat_id, './insta8.jpg', caption="@LostUserBot ile Yüklendi.")
                                 await delFile("./insta8.jpg")
 
                             else:
                                 await downloader(post8, "./insta8.mp4")
-                                await event.client.send_file(event.chat_id, './insta8.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                                await event.client.send_file(event.chat_id, './insta8.mp4', caption="@LostUserBot ile Yüklendi.")
                                 await delFile("./insta8.mp4")
 
                             if html2["data"]["post9"]["type"] == "jpg" or html2["data"]["post9"]["type"] == "png":
                                 await downloader(post9, "./insta9.jpg")
-                                await event.client.send_file(event.chat_id, './insta9.jpg', caption="@AsenaUserBot ile Yüklendi.")
+                                await event.client.send_file(event.chat_id, './insta9.jpg', caption="@LostUserBot ile Yüklendi.")
                                 await delFile("./insta9.jpg")
 
                             else:
                                 await downloader(post9, "./insta9.mp4")
-                                await event.client.send_file(event.chat_id, './insta9.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                                await event.client.send_file(event.chat_id, './insta9.mp4', caption="@LostUserBot ile Yüklendi.")
                                 await delFile("./insta9.mp4")
 
                     else:
                         if html2["data"]["post1"]["type"] == "jpg" or html2["data"]["post1"]["type"] == "png":
                             await downloader(post1, "./insta1.jpg")
-                            await event.client.send_file(event.chat_id, './insta1.jpg', caption="@AsenaUserBot ile Yüklendi.")
+                            await event.client.send_file(event.chat_id, './insta1.jpg', caption="@LostUserBot ile Yüklendi.")
                             await delFile("./insta1.jpg")
 
                         else:
                             await downloader(post2, "./insta1.mp4")
-                            await event.client.send_file(event.chat_id, './insta1.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                            await event.client.send_file(event.chat_id, './insta1.mp4', caption="@LostUserBot ile Yüklendi.")
                             await delFile("./insta1.mp4")
 
                         if html2["data"]["post2"]["type"] == "jpg" or html2["data"]["post2"]["type"] == "png":
                             await downloader(post2, "./insta2.jpg")
-                            await event.client.send_file(event.chat_id, './insta2.jpg', caption="@AsenaUserBot ile Yüklendi.")
+                            await event.client.send_file(event.chat_id, './insta2.jpg', caption="@LostUserBot ile Yüklendi.")
                             await delFile("./insta2.jpg")
 
                         else:
                             await downloader(post2, "./insta2.mp4")
-                            await event.client.send_file(event.chat_id, './insta2.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                            await event.client.send_file(event.chat_id, './insta2.mp4', caption="@LostUserBot ile Yüklendi.")
                             await delFile("./insta2.mp4")
 
                         if html2["data"]["post3"]["type"] == "jpg" or html2["data"]["post3"]["type"] == "png":
                             await downloader(post3, "./insta3.jpg")
-                            await event.client.send_file(event.chat_id, './insta3.jpg', caption="@AsenaUserBot ile Yüklendi.")
+                            await event.client.send_file(event.chat_id, './insta3.jpg', caption="@LostUserBot ile Yüklendi.")
                             await delFile("./insta3.jpg")
 
                         else:
                             await downloader(post3, "./insta3.mp4")
-                            await event.client.send_file(event.chat_id, './insta3.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                            await event.client.send_file(event.chat_id, './insta3.mp4', caption="@LostUserBot ile Yüklendi.")
                             await delFile("./insta3.mp4")
 
                         if html2["data"]["post4"]["type"] == "jpg" or html2["data"]["post4"]["type"] == "png":
                             await downloader(post4, "./insta4.jpg")
-                            await event.client.send_file(event.chat_id, './insta4.jpg', caption="@AsenaUserBot ile Yüklendi.")
+                            await event.client.send_file(event.chat_id, './insta4.jpg', caption="@LostUserBot ile Yüklendi.")
                             await delFile("./insta4.jpg")
 
                         else:
                             await downloader(post4, "./insta4.mp4")
-                            await event.client.send_file(event.chat_id, './insta4.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                            await event.client.send_file(event.chat_id, './insta4.mp4', caption="@LostUserBot ile Yüklendi.")
                             await delFile("./insta4.mp4")
 
                         if html2["data"]["post5"]["type"] == "jpg" or html2["data"]["post5"]["type"] == "png":
                             await downloader(post5, "./insta5.jpg")
-                            await event.client.send_file(event.chat_id, './insta5.jpg', caption="@AsenaUserBot ile Yüklendi.")
+                            await event.client.send_file(event.chat_id, './insta5.jpg', caption="@LostUserBot ile Yüklendi.")
                             await delFile("./insta5.jpg")
 
                         else:
                             await downloader(post5, "./insta5.mp4")
-                            await event.client.send_file(event.chat_id, './insta5.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                            await event.client.send_file(event.chat_id, './insta5.mp4', caption="@LostUserBot ile Yüklendi.")
                             await delFile("./insta5.mp4")
 
                         if html2["data"]["post6"]["type"] == "jpg" or html2["data"]["post6"]["type"] == "png":
                             await downloader(post6, "./insta6.jpg")
-                            await event.client.send_file(event.chat_id, './insta6.jpg', caption="@AsenaUserBot ile Yüklendi.")
+                            await event.client.send_file(event.chat_id, './insta6.jpg', caption="@LostUserBot ile Yüklendi.")
                             await delFile("./insta6.jpg")
 
                         else:
                             await downloader(post6, "./insta6.mp4")
-                            await event.client.send_file(event.chat_id, './insta6.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                            await event.client.send_file(event.chat_id, './insta6.mp4', caption="@LostUserBot ile Yüklendi.")
                             await delFile("./insta6.mp4")
 
                         if html2["data"]["post7"]["type"] == "jpg" or html2["data"]["post7"]["type"] == "png":
                             await downloader(post7, "./insta7.jpg")
-                            await event.client.send_file(event.chat_id, './insta7.jpg', caption="@AsenaUserBot ile Yüklendi.")
+                            await event.client.send_file(event.chat_id, './insta7.jpg', caption="@LostUserBot ile Yüklendi.")
                             await delFile("./insta7.jpg")
 
                         else:
                             await downloader(post7, "./insta7.mp4")
-                            await event.client.send_file(event.chat_id, './insta7.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                            await event.client.send_file(event.chat_id, './insta7.mp4', caption="@LostUserBot ile Yüklendi.")
                             await delFile("./insta7.mp4")
 
                         if html2["data"]["post8"]["type"] == "jpg" or html2["data"]["post8"]["type"] == "png":
                             await downloader(post8, "./insta8.jpg")
-                            await event.client.send_file(event.chat_id, './insta8.jpg', caption="@AsenaUserBot ile Yüklendi.")
+                            await event.client.send_file(event.chat_id, './insta8.jpg', caption="@LostUserBot ile Yüklendi.")
                             await delFile("./insta8.jpg")
 
                         else:
                             await downloader(post8, "./insta8.mp4")
-                            await event.client.send_file(event.chat_id, './insta8.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                            await event.client.send_file(event.chat_id, './insta8.mp4', caption="@LostUserBot ile Yüklendi.")
                             await delFile("./insta8.mp4")
 
                         if html2["data"]["post9"]["type"] == "jpg" or html2["data"]["post9"]["type"] == "png":
                             await downloader(post9, "./insta9.jpg")
-                            await event.client.send_file(event.chat_id, './insta9.jpg', caption="@AsenaUserBot ile Yüklendi.")
+                            await event.client.send_file(event.chat_id, './insta9.jpg', caption="@LostUserBot ile Yüklendi.")
                             await delFile("./insta9.jpg")
 
                         else:
                             await downloader(post9, "./insta9.mp4")
-                            await event.client.send_file(event.chat_id, './insta9.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                            await event.client.send_file(event.chat_id, './insta9.mp4', caption="@LostUserBot ile Yüklendi.")
                             await delFile("./insta9.mp4")
 
                         if html2["data"]["post10"]["type"] == "jpg" or html2["data"]["post10"]["type"] == "png":
                             await downloader(post10, "./insta10.jpg")
-                            await event.client.send_file(event.chat_id, './insta10.jpg', caption="@AsenaUserBot ile Yüklendi.")
+                            await event.client.send_file(event.chat_id, './insta10.jpg', caption="@LostUserBot ile Yüklendi.")
                             await delFile("./insta10.jpg")
 
                         else:
                             await downloader(post10, "./insta10.mp4")
-                            await event.client.send_file(event.chat_id, './insta10.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                            await event.client.send_file(event.chat_id, './insta10.mp4', caption="@LostUserBot ile Yüklendi.")
                             await delFile("./insta10.mp4")
 
                     await event.delete()
@@ -657,7 +657,7 @@ async def apis(event):
                 html4 = json.loads(html3)
                 if html4["status"] == "OK":
                     await downloader(html4["data"]["url"], "./reel.mp4")
-                    await event.client.send_file(event.chat_id, './reel.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                    await event.client.send_file(event.chat_id, './reel.mp4', caption="@LostUserBot ile Yüklendi.")
                     await delFile("./reel.mp4")
                     await event.delete()
                 else:
@@ -696,7 +696,7 @@ async def apis(event):
                 else:
                     return await event.edit("Hesap gizli veya böyle bir hesap yok.")
     else:
-        return await event.edit("**Lütfen Kullanım Talimatını Okuyun!** >> `.asena insta`")
+        return await event.edit("**Lütfen Kullanım Talimatını Okuyun!** >> `.Lost insta`")
 
 
 async def downloader(media, name):

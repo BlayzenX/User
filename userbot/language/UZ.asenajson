@@ -1,5 +1,5 @@
 {
-    "__ASENAJSON__": true,
+    "__LostJSON__": true,
     "LANGUAGE": "Uzbekcha",
     "LANGCODE": "uz",
     "AUTHOR": "@H_A_Eshimov",
@@ -30,11 +30,11 @@
             "ALREADY_DELETED": "`Plugin fayli allaqachon yo'q qilingan.`",
             "NOT_FOUND_PLUGIN": "`Qachonlardir bunday plugin mavjud edi. ehtimol hozirda yo'q.  Ammo bu aniq emas.`",
             "PLUG_DELETED": "`Plugin yo'q qilindi!` **Amalga oshiriladigan operatsiyalar uchun qayta yuklashingiz kerak.**",
-            "ASENA_PLUGIN_CAPTION": "Bu [Asena](https://t.me/AsenaUserBot) plugini."
+            "Lost_PLUGIN_CAPTION": "Bu [Lost](https://t.me/LostUserBot) plugini."
         },
-        "__asena": {
-            "NEED_PLUGIN": "Iltimos Asena moduli nomini ko'rsating.",
-            "NEED_MODULE": "Iltimos qaysi Asena moduli bilan yordam olishni xohlayotganingizni ko'rsating !!\nMasalan: .asena <modul nomi>"
+        "__Lost": {
+            "NEED_PLUGIN": "Iltimos Lost moduli nomini ko'rsating.",
+            "NEED_MODULE": "Iltimos qaysi Lost moduli bilan yordam olishni xohlayotganingizni ko'rsating !!\nMasalan: .Lost <modul nomi>"
         },
         "__helpme": {
             "NO_BOT": "`Bot ishlamayapti!  Bot Token va foydalanuvchi nomini to'g'ri o'rnating.  Modul to'xtatildi.`"
@@ -50,7 +50,7 @@
             "INVALID_MEDIA": "```Mediya yaroqsiz.```",
             "PRIVATE": "`Ushbu buyruqni shaxsiy xabarda ishlatib bolmaydi!`",
             "EKLE": "`Muvaffaqiyatli yuklandi`",
-            "BRAIN": "`Xato!  Men buni Asena rasmiysiga qila olmayman.`",
+            "BRAIN": "`Xato!  Men buni Lost rasmiysiga qila olmayman.`",
             "BANNING": "`Foydalanuvchiga taqiq qoyilmoqda...`",
             "ALREADY_GBANNED": "`Xato! Global miqyosda foydalanuvchi allaqachon taqiqlangan.`",
             "GBANNED_REASON": "`Foydalanuvchi global miqyosda taqiqlangan!`\n**Sabab:**",
@@ -145,8 +145,8 @@
             "EFECTING": "`Effekt joylanmoqda...`",
             "NOT_FOUND_EFECT": "**Siz ko'rsatgan effekt topilmadi! **`Siz foydalanishingiz mumkin bo'lgan effektlar: ``çocuk/robot/earrape/hızlı/parazit/yankı`",
             "NEED_VIDEO": "`Iltimos hohlagan bir videoni yuborin!`",
-            "WITH_ASENA": "@AsenaUserBot `ila effekt joylandi`",
-            "WITH_ASENA_GIF": "@AsenaUserBot `ila Gif'ga aylantirildi.`",
+            "WITH_Lost": "@LostUserBot `ila effekt joylandi`",
+            "WITH_Lost_GIF": "@LostUserBot `ila Gif'ga aylantirildi.`",
             "CONVERTING_TO_GIF": "Gif'ga aylantrilmoqda...",
             "UPLOADING_GIF": "`Gif yuklanmoqda?..`",
             "ERROR": "Gif'ga aylantirilmadi :/"
@@ -253,7 +253,7 @@
         },
         "galeri": {
             "ADDED_LIST": "`Surat navbatga qo'yildi.`",
-            "INVALID_URL": "`Siz yaroqsiz rasmning URL manzilini kiritdingiz.  Agar siz foydalanish haqida hech qanday tasavvurga ega bo'lmasangiz: ` `.asena galeri` `yozing.`",
+            "INVALID_URL": "`Siz yaroqsiz rasmning URL manzilini kiritdingiz.  Agar siz foydalanish haqida hech qanday tasavvurga ega bo'lmasangiz: ` `.Lost galeri` `yozing.`",
             "EXAMPLE": "`Iltimos hohlagan bir rasm manziliga kiring. Misol uchun: ` `.galeriyaga qo'shish https://i.resimyukle.xyz/7Qbbc9.jpeg`",
             "LIST": "Siz navbatga qo'yilgan fotosuratlar",
             "REMOVED": "**Keyingi rasm muvaffaqiyatli olib tashlandi**",
@@ -261,7 +261,7 @@
             "NEED_NUMBER": "Iltimos rasmning tartibini ko'rsating.  Namuna:",
             "WORKING": "`Hozirda galereya ishlayapti.`",
             "STARTED": "`Galeriya ish faoliyatini boshladi.`",
-            "NEED_PHOTO": "Galeriya ish faoliyatini boshlashi uchun rasm yuklashingiz kerakdir. Yuklashni bilmasangiz agar .asena galeri ile kullanım hakkında bilgi sahibi olabilirsiniz.",
+            "NEED_PHOTO": "Galeriya ish faoliyatini boshlashi uchun rasm yuklashingiz kerakdir. Yuklashni bilmasangiz agar .Lost galeri ile kullanım hakkında bilgi sahibi olabilirsiniz.",
             "STOPPED": "`Galeriya ish faoliyati tuxtatildi!`",
             "ALREADY_STOP": "`Galeriya avvaldan ish faoliyati tuxtagan edi.`",
             "INVALID": "**Nomalum buyruq** Masalan:\n\nGaleri'da rasm yuklash: `.galeriyaga qo'shish https://i.resimyukle.xyz/7Qbbc9.jpeg`\nGalereya ro'yxatiga qarang: `.galeriya ruyxati`\nOddiy fotosuratni o'chirish: `.galeriya uchirish <sıra sayısı>`"
@@ -332,16 +332,16 @@
             "REPLY_TO_FILE": "`Faylga javob bering.`",
             "QUERY": "So'rov",
             "RESULT": "Chiqish",
-            "NEED_MUCH_DATA_FOR_RANDOM": "`2 yoki undan ortiq narsalar talab qilinadi.  Qo'shimcha ma'lumot olish uchun .asena random tasodifiy buyrug'ini kiriting..`",
+            "NEED_MUCH_DATA_FOR_RANDOM": "`2 yoki undan ortiq narsalar talab qilinadi.  Qo'shimcha ma'lumot olish uchun .Lost random tasodifiy buyrug'ini kiriting..`",
             "SLEEP_DESC": "Foydalanish shakli: `.sleep [soniya]`",
             "SLEEPING": "`Sokin uyqudaman...`",
             "GOODMORNIN_YALL": "`Xayrli tong!`",
             "GOODBYE_MFRS": "`Ko'rishguncha... *Windows XP yopiq ovoz*`",
             "RESTARTING": "`Bot qayta yuklanmoqda...`",
-            "SUPPORT_GROUP": "Siz bizning qo'llab-quvvatlash guruhimizga murojaat qilishingiz mumkin [Bu Erda](http://t.me/AsenaSupport).",
+            "SUPPORT_GROUP": "Siz bizning qo'llab-quvvatlash guruhimizga murojaat qilishingiz mumkin [Bu Erda](http://t.me/LostSupport).",
             "CREATOR": "Bu bot \n[Yusuf](https://t.me/Fusuf) [Usta](https://t.me/SelaxG) tomonidan ishlab chiqilgan. [Hamudulla](https://t.me/H_A_Eshimov) tomonidan Uzbekchaga ugirildi \n",
-            "README": "[Asena README.md](https://github.com/quiec/AsenaUserBot/blob/master/README.md)",
-            "REPO": "[Asena Repo](https://github.com/quiec/asenauserbot)",
+            "README": "[Lost README.md](https://github.com/quiec/LostUserBot/blob/master/README.md)",
+            "REPO": "[Lost Repo](https://github.com/quiec/Lostuserbot)",
             "CHECK_LOGS": "`Xabar hal qilinganligi uchun userbot jurnallarini tekshiring!`"
         },
         "notes": {
@@ -489,7 +489,7 @@
             "SEARCHING": "`Qushiq qidirilmoqda...`",
             "BLOCKED_DEEZER": "`Mmmh menimcha` @DeezerMusicBot `ni siz blokladingiz  Blockni oching.",
             "NOT_FOUND": "`Qidirilgan qushiq topilmadi😞 Kechiring.`",
-            "UPLOADED_WITH": "@AsenaUserBot orqali yuklandi.",
+            "UPLOADED_WITH": "@LostUserBot orqali yuklandi.",
             "USAGE": "`Qullanma:` `.song qushiq nomi/youtube url/spotify url`",
             "SEARCHING_SPOT": "`Qushiq qidirilmoqda va yuklanmoqda. Iltimos kuting!",
             "DOWNLOADED": "`Yuklash ishlari bajarildi. Iltimos kuting...`",
@@ -524,7 +524,7 @@
             "QUERY": "So'rov",
             "RESULT": "Natija",
             "NOT_FOUND": "Biron nima topilmadi😔",
-            "EXAMPLE": "`Foydalanish uchun .asena pip buyruqni bajaring`"
+            "EXAMPLE": "`Foydalanish uchun .Lost pip buyruqni bajaring`"
         },
         "time": {
             "CLOCK": "Bu yerda soat",
@@ -543,7 +543,7 @@
             "NOT_FOUND": "Topilmadi.",
             "GIT_ERROR": "Git xatosi!",
             "NOT_GIT": "papka git omboriga o'xshamaydi. \nAmmo bu muammoni botni .update now buyrug'i bilan kuch bilan yangilash orqali hal qilishingiz mumkin..",
-            "INVALID_BRANCH": "**[UPDATER]:**` O'ylaymanki siz Asena yuklashingizni o'zgartirgansiz va o'zingizning filialingizdan foydalanasiz.\nUshbu holat yangilanuvchini chalkashtirib yuboradi,\nYangilanish qayerdan olinadi?\nIltimos, rasmiy repodan Asena botidan foydalaning.`",
+            "INVALID_BRANCH": "**[UPDATER]:**` O'ylaymanki siz Lost yuklashingizni o'zgartirgansiz va o'zingizning filialingizdan foydalanasiz.\nUshbu holat yangilanuvchini chalkashtirib yuboradi,\nYangilanish qayerdan olinadi?\nIltimos, rasmiy repodan Lost botidan foydalaning.`",
             "UPDATE": "\n`Botingiz:` **butunlay yangi!** `Daraja:` **{}**\n",
             "WAS_UPDATE": "**{} uchun yangi yangilanish mavjud!\n\nO'zgarishlar:**\n`{}`",
             "BIG": "`O'zgarishlar ro'yxati juda katta uni fayl sifatida ko'rishingiz kerak.`",

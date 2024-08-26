@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# Asena UserBot - Yusuf Usta
+# Lost UserBot - Yusuf Usta
 
 from asyncio import sleep
 from json import loads
@@ -206,22 +206,22 @@ def get_spotify_info(TIME=5):
         totaltime = int(item['duration_ms'])
         if len(item['album']['images']) > 0:
             telegraph.create_account(short_name='spotify')
-            if path.exists("@AsenaUserBot-Spotify.jpg"):
-                remove("@AsenaUserBot-Spotify.jpg")          
+            if path.exists("@LostUserBot-Spotify.jpg"):
+                remove("@LostUserBot-Spotify.jpg")          
             try:
                 r = get(str(item['album']['images'][0]['url']))
-                with open("@AsenaUserBot-Spotify.jpg", 'wb') as f:
+                with open("@LostUserBot-Spotify.jpg", 'wb') as f:
                     f.write(r.content)    
 
-                with open('@AsenaUserBot-Spotify.jpg', 'rb') as f:
+                with open('@LostUserBot-Spotify.jpg', 'rb') as f:
                     req = post('https://telegra.ph/upload', 
                     files={'Hey': ('Hey', f, 'image/jpeg')}  # image/gif, image/jpeg, image/jpg, image/png, video/mp4
                     ).json()
                     image = "[🔄](https://telegra.ph"+req[0]['src']+")"
             except Exception:
                 pass
-        if path.exists("@AsenaUserBot-Spotify.jpg"):
-            remove("@AsenaUserBot-Spotify.jpg") 
+        if path.exists("@LostUserBot-Spotify.jpg"):
+            remove("@LostUserBot-Spotify.jpg") 
         art = []
         message = ""
         Stop = False

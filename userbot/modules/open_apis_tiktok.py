@@ -31,7 +31,7 @@ async def apis(event):
                 with open("./tt.mp4", "wb") as f:
                     f.write(resp.content)
 
-                await event.client.send_file(event.chat_id, './tt.mp4', caption="@AsenaUserBot ile Yüklendi.")
+                await event.client.send_file(event.chat_id, './tt.mp4', caption="@LostUserBot ile Yüklendi.")
                 os.remove("./tt.mp4")
                 await event.delete()
                 return True

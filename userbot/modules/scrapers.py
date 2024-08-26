@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# Asena UserBot - Yusuf Usta
+# Lost UserBot - Yusuf Usta
 
 
 """ Diğer kategorilere uymayan fazlalık komutların yer aldığı modül. """
@@ -92,7 +92,7 @@ async def tts2(query):
             "`Yazıdan sese çevirmek için bir metin gir. Kullanım: .tts2 erkek/kadın merhaba`")
         return
 
-    mp3 = get(f"https://texttospeech.responsivevoice.org/v1/text:synthesize?text={message}&lang={TTS_LANG}&engine=g3&name=&pitch=0.5&rate=0.5&volume=1&key=AsenaUserbot&gender={cins}").content
+    mp3 = get(f"https://texttospeech.responsivevoice.org/v1/text:synthesize?text={message}&lang={TTS_LANG}&engine=g3&name=&pitch=0.5&rate=0.5&volume=1&key=LostUserbot&gender={cins}").content
     with open("h.mp3", "wb") as audio:
         audio.write(mp3)
     await query.client.send_file(query.chat_id, "h.mp3", voice_note=True)
@@ -227,8 +227,8 @@ async def haber(event):
 @register(outgoing=True, pattern="^.karbon ?(.*)")
 async def karbon(e):
     cmd = e.pattern_match.group(1)
-    if os.path.exists("@AsenaUserBot-Karbon.jpg"):
-        os.remove("@AsenaUserBot-Karbon.jpg")
+    if os.path.exists("@LostUserBot-Karbon.jpg"):
+        os.remove("@LostUserBot-Karbon.jpg")
 
     if len(cmd) < 1:
         await e.edit("Kullanım: .karbon mesaj")    
@@ -239,10 +239,10 @@ async def karbon(e):
 
     r = get(f"https://carbonnowsh.herokuapp.com/?code={cmd}")
 
-    with open("@AsenaUserBot-Karbon.jpg", 'wb') as f:
+    with open("@LostUserBot-Karbon.jpg", 'wb') as f:
         f.write(r.content)    
 
-    await e.client.send_file(e.chat_id, file="@AsenaUserBot-Karbon.jpg", force_document=True, caption="[AsenaUserBot](https://t.me/asenauserbot) ile oluşturuldu.")
+    await e.client.send_file(e.chat_id, file="@LostUserBot-Karbon.jpg", force_document=True, caption="[LostUserBot](https://t.me/Lostuserbot) ile oluşturuldu.")
     await e.delete()
 
 @register(outgoing=True, pattern="^.crblang (.*)")

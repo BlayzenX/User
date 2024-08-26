@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# Asena UserBot - Yusuf Usta
+# Lost UserBot - Yusuf Usta
 #
 
 """ Tüm modülleri yükleyen init dosyası """
@@ -12,12 +12,12 @@ from userbot import LOGS
 
 
 def __list_all_modules():
-    from os.path import dirname, basename, isfile
+    from os.path import dirname, bLostme, isfile
     import glob
 
     mod_paths = glob.glob(dirname(__file__) + "/*.py")
     all_modules = [
-        basename(f)[:-3] for f in mod_paths
+        bLostme(f)[:-3] for f in mod_paths
         if isfile(f) and f.endswith(".py") and not f.endswith("__init__.py")
     ]
     return all_modules

@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# Asena UserBot - Yusuf Usta
+# Lost UserBot - Yusuf Usta
 
 import datetime
 from telethon import events
@@ -86,7 +86,7 @@ def MemeYap (Resim, Text, FontS = 40, Bottom = False, BottomText = None):
                 drawTextWithOutline(Bottom_Satirlar[i], x, y)
                 lastY = y
 
-    Foto.save("asenameme.png")
+    Foto.save("Lostmeme.png")
 
 @register(outgoing=True, pattern="^.sangmata(?: |$)(.*)")
 async def sangmata(event):
@@ -151,32 +151,32 @@ async def memeyap(event):
         if reply.photo:
             Resim = await reply.download_media()
         elif reply.sticker and reply.file.ext == ".webp":
-            if os.path.exists("./AsenaSticker.png"):
-                os.remove("./AsenaSticker.png")
+            if os.path.exists("./LostSticker.png"):
+                os.remove("./LostSticker.png")
 
             foto = await reply.download_media()
             im = Image.open(foto).convert("RGB")
-            im.save("AsenaSticker.png", "png")
-            Resim = "AsenaSticker.png"
+            im.save("LostSticker.png", "png")
+            Resim = "LostSticker.png"
         elif reply.sticker and reply.file.ext == ".tgs":
             sticker = await reply.download_media()
-            os.system(f"lottie_convert.py --frame 0 -if lottie -of png '{sticker}' AsenaSticker.png")
+            os.system(f"lottie_convert.py --frame 0 -if lottie -of png '{sticker}' LostSticker.png")
             os.remove(sticker)
-            Resim = "AsenaSticker.png"
+            Resim = "LostSticker.png"
         elif reply.media:
             Resim = await reply.download_media()
             Sure = os.system("ffmpeg -i '"+Resim+"' 2>&1 | grep Duration | awk '{print $2}' | tr -d , | awk -F ':' '{print ($3+$2*60+$1*3600)/2}'``")
-            os.system(f"ffmpeg -i '{Resim}' -vcodec mjpeg -vframes 1 -an -f rawvideo -ss {Sure} AsenaThumb.jpg")
+            os.system(f"ffmpeg -i '{Resim}' -vcodec mjpeg -vframes 1 -an -f rawvideo -ss {Sure} LostThumb.jpg")
             os.remove(Resim)
-            Resim = 'AsenaThumb.jpg'
+            Resim = 'LostThumb.jpg'
         else:
             return await event.edit(LANG['REPLY_TO_MEME'])
             
-        if os.path.exists("./asenameme.png"):
-            os.remove("./asenameme.png")
+        if os.path.exists("./Lostmeme.png"):
+            os.remove("./Lostmeme.png")
 
         MemeYap(Resim, Text, font, Bottom, BottomText)
-        await event.client.send_file(event.chat_id, "./asenameme.png", reply_to=reply)
+        await event.client.send_file(event.chat_id, "./Lostmeme.png", reply_to=reply)
         await event.delete()
         os.remove(Resim)
     else:
@@ -387,7 +387,7 @@ CmdHelp('scrapers_bot').add_command(
 ).add_command(
     'scan', '<yanıt>', 'Belirtilen dosyada virüs var mı yok mu bakın.'
 ).add_command(
-    'meme', '<font> <üst;alt>', 'Fotoğrafa yazı ekleyin. İsterseniz font büyüklüğünü de yazabilirsiniz.', 'meme 30 asena;usta'
+    'meme', '<font> <üst;alt>', 'Fotoğrafa yazı ekleyin. İsterseniz font büyüklüğünü de yazabilirsiniz.', 'meme 30 Lost;usta'
 ).add_command(
     'voicy', '<yanıt>', 'Sesi yazıya çevirin.'
 ).add_command(

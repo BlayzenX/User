@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# Asena UserBot - Yusuf Usta
+# Lost UserBot - Yusuf Usta
 
 import re
 import userbot.modules.sql_helper.mesaj_sql as sql
@@ -73,7 +73,7 @@ async def degistir(event):
 CmdHelp('degistir').add_command(
     'değiştir', '<modül> <mesaj/yanıt>', 'Değiştir, bottaki plugin-mesajlarını değiştirmenize yarar. Eğer mesaj yazmazsanız Plugin mesajını orijinal haline döndürür.', '.değiştir afk \"Şu an burda değilim... Belki hiç gelmem\"'
 ).add_info(
-    '**Desteklenen Pluginler:** `afk/alive/pm/kickme/dızcı/ban/mute/approve/disapprove/block`\n**Alive Değişkenleri:** `{plugin}, {telethon}, {asena}, {python}, {username}, {fullname}, {lastname}, {id}, {mention}`\n\
+    '**Desteklenen Pluginler:** `afk/alive/pm/kickme/dızcı/ban/mute/approve/disapprove/block`\n**Alive Değişkenleri:** `{plugin}, {telethon}, {Lost}, {python}, {username}, {fullname}, {lastname}, {id}, {mention}`\n\
 **Ban/Mute Değişkenleri:** `{id}, {username}, {first_name}, {last_name}, {mention}, {date}, {count}`\n\
 **AFK Değişkenleri:** `{username}, {mention}, {first_name}, {last_name}, {last_seen_seconds}, {last_seen}, {last_seen_long}`\n\
 **PMpermit Değişkenler(pm, block, approve, disapprove):** `{id}, {username}, {mention}, {first_name}, {last_name}`\

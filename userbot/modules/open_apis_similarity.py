@@ -18,7 +18,7 @@ async def apis(event):
             txt[1] = txt[1].replace(" ", "", 1)
 
         if len(txt) != 2:
-            return await event.edit("**Girilen Cümlede 2 Adet** `&&` **Sembolü Bulundu. Lütfen** `.asena benzerlik` **Yazıp Kullanımına Göz Atın.**")
+            return await event.edit("**Girilen Cümlede 2 Adet** `&&` **Sembolü Bulundu. Lütfen** `.Lost benzerlik` **Yazıp Kullanımına Göz Atın.**")
 
         f1 = txt[0]
         f2 = txt[1]
@@ -45,7 +45,7 @@ Help = CmdHelp('benzerlik')
 Help.add_command('benzerlik',
                  '<1. Cümle> && <2. Cümle>',
                  '2 Cümlenin Anlam Bakımından Ne Kadar Benzediğini Gösterir. (Yapay Zeka)',
-                 'benzerlik Asena harika bir araç! && Asena kullanmak iyi bir seçenek!'
+                 'benzerlik Lost harika bir araç! && Lost kullanmak iyi bir seçenek!'
                  )
 Help.add_info("@phaticusthiccy tarafından yapılmıştır.")
 Help.add()

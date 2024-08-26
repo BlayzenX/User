@@ -25,7 +25,7 @@ async def apis(event):
         text = degerler.replace(model, "")
 
     except IndexError:
-        return await event.edit("**Eksik Paramatreler!**\n\n**Örnek:** `textpro neon Asena`\n\n__Stiller:__ `neon`, `neon2`, `devil`, `batman`, `led`, `yıldırım`, `bp`, `yaprak`, `ask`, `ask2`, `afis`, `glitch`")
+        return await event.edit("**Eksik Paramatreler!**\n\n**Örnek:** `textpro neon Lost`\n\n__Stiller:__ `neon`, `neon2`, `devil`, `batman`, `led`, `yıldırım`, `bp`, `yaprak`, `ask`, `ask2`, `afis`, `glitch`")
 
     url = ""
 
@@ -55,7 +55,7 @@ async def apis(event):
         url = "https://textpro.me/create-impressive-glitch-text-effects-online-1027.html"
 
     else:
-        return await event.edit("**Yanlış Paramatre!**\n\n**Örnek:** `textpro neon Asena`\n\n__Stiller:__ `neon`, `neon2`, `devil`, `batman`, `led`, `yıldırım`, `bp`, `yaprak`, `ask`, `ask2`, `afis`, `glitch`")
+        return await event.edit("**Yanlış Paramatre!**\n\n**Örnek:** `textpro neon Lost`\n\n__Stiller:__ `neon`, `neon2`, `devil`, `batman`, `led`, `yıldırım`, `bp`, `yaprak`, `ask`, `ask2`, `afis`, `glitch`")
 
     await event.edit("__Fotoğraf Oluşturuluyor..__")
     async with aiohttp.ClientSession(connector=aiohttp.TCPConnector(verify_ssl=False)) as session:
@@ -66,7 +66,7 @@ async def apis(event):
             if html2["status"] == "OK":
                 img = html2["data"]
                 download(img)
-                await event.client.send_file(event.chat_id, './tp.png', caption="@AsenaUserBot ile Yüklendi.")
+                await event.client.send_file(event.chat_id, './tp.png', caption="@LostUserBot ile Yüklendi.")
                 os.remove("./tp.png")
                 await event.delete()
                 return True

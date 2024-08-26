@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# Asena UserBot - Yusuf Usta
+# Lost UserBot - Yusuf Usta
 
 from userbot.cmdhelp import CmdHelp
 from userbot import PLUGIN_CHANNEL_ID, CMD_HELP
@@ -26,13 +26,13 @@ async def dil(event):
             reply = await event.get_reply_message()
             dosya = await reply.download_media()
 
-            if ((len(reply.file.name.split(".")) >= 2) and (not reply.file.name.split(".")[1] == "asenajson")):
-                return await event.edit("`Lütfen geçerli bir` **AsenaJSON** `dosyası verin!`")
+            if ((len(reply.file.name.split(".")) >= 2) and (not reply.file.name.split(".")[1] == "Lostjson")):
+                return await event.edit("`Lütfen geçerli bir` **LostJSON** `dosyası verin!`")
 
             try:
                 dosya = loads(open(dosya, "r").read())
             except JSONDecodeError:
-                return await event.edit("`Lütfen geçerli bir` **AsenaJSON** `dosyası verin!`")
+                return await event.edit("`Lütfen geçerli bir` **LostJSON** `dosyası verin!`")
 
             await event.edit(f"`{dosya['LANGUAGE']}` `dili yükleniyor...`")
             pchannel = await event.client.get_entity(PLUGIN_CHANNEL_ID)
@@ -49,15 +49,15 @@ async def dil(event):
         await event.edit("`Dil dosyası bilgileri getiriliyor... Lütfen bekleyiniz.`")
         if event.is_reply:
             reply = await event.get_reply_message()
-            if ((len(reply.file.name.split(".")) >= 1) and (not reply.file.name.split(".")[1] == "asenajson")):
-                return await event.edit("`Lütfen geçerli bir` **AsenaJSON** `dosyası verin!`")
+            if ((len(reply.file.name.split(".")) >= 1) and (not reply.file.name.split(".")[1] == "Lostjson")):
+                return await event.edit("`Lütfen geçerli bir` **LostJSON** `dosyası verin!`")
 
             dosya = await reply.download_media()
 
             try:
                 dosya = loads(open(dosya, "r").read())
             except JSONDecodeError:
-                return await event.edit("`Lütfen geçerli bir` **AsenaJSON** `dosyası verin!`")
+                return await event.edit("`Lütfen geçerli bir` **LostJSON** `dosyası verin!`")
 
             await event.edit(
                 f"**Dil: **`{dosya['LANGUAGE']}`\n"
@@ -74,7 +74,7 @@ async def dil(event):
             f"**Dil Kodu: **`{LANGUAGE_JSON['LANGCODE']}`\n"
             f"**Çevirmen: **`{LANGUAGE_JSON ['AUTHOR']}`\n"
 
-            f"\n\nDiğer diller için @AsenaDil kanalına bakabilirsiniz."
+            f"\n\nDiğer diller için @LostDil kanalına bakabilirsiniz."
         )
 
 CmdHelp('dil').add_command(

@@ -4,9 +4,9 @@
 # you may not use this file except in compliance with the License.
 #
 
-# Asena UserBot - Yusuf Usta
+# Lost UserBot - Yusuf Usta
 
-# Turkish word meaning. Only Turkish. Coded @By_Azade, Asena uyarlaması @qulec
+# Turkish word meaning. Only Turkish. Coded @By_Azade, Lost uyarlaması @qulec
 #
 
 import requests

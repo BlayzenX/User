@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# Asena UserBot - Yusuf Usta
+# Lost UserBot - Yusuf Usta
 
 from . import LANGUAGE, LOGS, bot, PLUGIN_CHANNEL_ID
 from json import loads, JSONDecodeError
@@ -16,7 +16,7 @@ LOGS.info("Dil dosyası yükleniyor...")
 LANGUAGE_JSON = None
 
 for dil in bot.iter_messages(pchannel, filter=InputMessagesFilterDocument):
-    if ((len(dil.file.name.split(".")) >= 2) and (dil.file.name.split(".")[1] == "asenajson")):
+    if ((len(dil.file.name.split(".")) >= 2) and (dil.file.name.split(".")[1] == "Lostjson")):
         if path.isfile(f"./userbot/language/{dil.file.name}"):
             try:
                 LANGUAGE_JSON = loads(open(f"./userbot/language/{dil.file.name}", "r").read())
@@ -24,9 +24,9 @@ for dil in bot.iter_messages(pchannel, filter=InputMessagesFilterDocument):
                 dil.delete()
                 remove(f"./userbot/language/{dil.file.name}")
 
-                if path.isfile("./userbot/language/DEFAULT.asenajson"):
+                if path.isfile("./userbot/language/DEFAULT.Lostjson"):
                     LOGS.warn("Varsayılan dil dosyası kullanılıyor...")
-                    LANGUAGE_JSON = loads(open(f"./userbot/language/DEFAULT.asenajson", "r").read())
+                    LANGUAGE_JSON = loads(open(f"./userbot/language/DEFAULT.Lostjson", "r").read())
                 else:
                     raise Exception("Your language file is invalid")
         else:
@@ -35,23 +35,23 @@ for dil in bot.iter_messages(pchannel, filter=InputMessagesFilterDocument):
                 LANGUAGE_JSON = loads(open(DOSYA, "r").read())
             except JSONDecodeError:
                 dil.delete()
-                if path.isfile("./userbot/language/DEFAULT.asenajson"):
+                if path.isfile("./userbot/language/DEFAULT.Lostjson"):
                     LOGS.warn("Varsayılan dil dosyası kullanılıyor...")
-                    LANGUAGE_JSON = loads(open(f"./userbot/language/DEFAULT.asenajson", "r").read())
+                    LANGUAGE_JSON = loads(open(f"./userbot/language/DEFAULT.Lostjson", "r").read())
                 else:
                     raise Exception("Your language file is invalid")
         break
 
 if LANGUAGE_JSON == None:
-    if path.isfile(f"./userbot/language/{LANGUAGE}.asenajson"):
+    if path.isfile(f"./userbot/language/{LANGUAGE}.Lostjson"):
         try:
-            LANGUAGE_JSON = loads(open(f"./userbot/language/{LANGUAGE}.asenajson", "r").read())
+            LANGUAGE_JSON = loads(open(f"./userbot/language/{LANGUAGE}.Lostjson", "r").read())
         except JSONDecodeError:
             raise Exception("Invalid json file")
     else:
-        if path.isfile("./userbot/language/DEFAULT.asenajson"):
+        if path.isfile("./userbot/language/DEFAULT.Lostjson"):
             LOGS.warn("Varsayılan dil dosyası kullanılıyor...")
-            LANGUAGE_JSON = loads(open(f"./userbot/language/DEFAULT.asenajson", "r").read())
+            LANGUAGE_JSON = loads(open(f"./userbot/language/DEFAULT.Lostjson", "r").read())
         else:
             raise Exception(f"Didn't find {LANGUAGE} file")
 

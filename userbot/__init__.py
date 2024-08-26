@@ -5,7 +5,7 @@
 #
 
 # Thanks github.com/spechide for creating inline bot support.
-# Asena UserBot - Yusuf Usta
+# Lost UserBot - Yusuf Usta
 """ UserBot hazırlanışı. """
 
 import os
@@ -32,11 +32,11 @@ ASYNC_POOL = []
 
 if CONSOLE_LOGGER_VERBOSE:
     basicConfig(
-        format="%(asctime)s - @AsenaUserBot - %(levelname)s - %(message)s",
+        format="%(asctime)s - @LostUserBot - %(levelname)s - %(message)s",
         level=DEBUG,
     )
 else:
-    basicConfig(format="%(asctime)s - @AsenaUserBot - %(levelname)s - %(message)s",
+    basicConfig(format="%(asctime)s - @LostUserBot - %(levelname)s - %(message)s",
                 level=INFO)
 LOGS = getLogger(__name__)
 
@@ -63,8 +63,8 @@ if not LANGUAGE in ["EN", "TR", "AZ", "UZ", "DEFAULT"]:
     LOGS.info("Bilinmeyen bir dil yazdınız. Bundan dolayı DEFAULT kullanılıyor.")
     LANGUAGE = "DEFAULT"
     
-# Asena Sürümü
-ASENA_VERSION = "v4.0"
+# Lost Sürümü
+Lost_VERSION = "v4.0"
 
 # Telegram API KEY ve HASH
 API_KEY = os.environ.get("API_KEY", None)
@@ -92,13 +92,13 @@ HEROKU_APIKEY = os.environ.get("HEROKU_APIKEY", None)
 # Güncelleyici için özel (fork) repo linki.
 UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/quiec/AsenaUserBot.git")
+    "https://github.com/quiec/LostUserBot.git")
 
 # Ayrıntılı konsol günlügü
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
 
 # SQL Veritabanı
-DB_URI = os.environ.get("DATABASE_URL", "sqlite:///asena.db")
+DB_URI = os.environ.get("DATABASE_URL", "sqlite:///Lost.db")
 
 # OCR API key
 OCR_SPACE_API_KEY = os.environ.get("OCR_SPACE_API_KEY", None)
@@ -152,7 +152,7 @@ TZ_NUMBER = int(os.environ.get("TZ_NUMBER", 1))
 CLEAN_WELCOME = sb(os.environ.get("CLEAN_WELCOME", "True"))
 
 # Last.fm Modülü
-BIO_PREFIX = os.environ.get("BIO_PREFIX", "@AsenaUserBot | ")
+BIO_PREFIX = os.environ.get("BIO_PREFIX", "@LostUserBot | ")
 DEFAULT_BIO = os.environ.get("DEFAULT_BIO", None)
 
 LASTFM_API = os.environ.get("LASTFM_API", None)
@@ -189,7 +189,7 @@ PM_AUTO_BAN_LIMIT = int(os.environ.get("PM_AUTO_BAN_LIMIT", 4))
 SPOTIFY_DC = os.environ.get("SPOTIFY_DC", None)
 SPOTIFY_KEY = os.environ.get("SPOTIFY_KEY", None)
 
-PAKET_ISMI = os.environ.get("PAKET_ISMI", "@AsenaUserBot Paketi")
+PAKET_ISMI = os.environ.get("PAKET_ISMI", "@LostUserBot Paketi")
 
 # Otomatik Katılma
 OTOMATIK_KATILMA = sb(os.environ.get("OTOMATIK_KATILMA", "True"))
@@ -284,8 +284,8 @@ def butonlastir(sayfa, moduller):
 with bot:
     if OTOMATIK_KATILMA:
         try:
-            bot(JoinChannelRequest("@AsenaUserBot"))
-            bot(JoinChannelRequest("@AsenaSupport"))
+            bot(JoinChannelRequest("@LostUserBot"))
+            bot(JoinChannelRequest("@LostSupport"))
         except:
             pass
 
@@ -297,21 +297,21 @@ with bot:
         @tgbot.on(NewMessage(pattern='/start'))
         async def start_bot_handler(event):
             if not event.message.from_id == uid:
-                await event.reply(f'`Merhaba ben` @AsenaUserBot`! Ben sahibime (`@{me.username}`) yardımcı olmak için varım, yaani sana yardımcı olamam :/ Ama sen de bir Asena açabilirsin; Kanala bak` @AsenaUserBot')
+                await event.reply(f'`Merhaba ben` @LostUserBot`! Ben sahibime (`@{me.username}`) yardımcı olmak için varım, yaani sana yardımcı olamam :/ Ama sen de bir Lost açabilirsin; Kanala bak` @LostUserBot')
             else:
-                await event.reply(f'`Tengri save Turks! Asena working... 🐺`')
+                await event.reply(f'`Tengri save Turks! Lost working... 🐺`')
 
         @tgbot.on(InlineQuery)  # pylint:disable=E0602
         async def inline_handler(event):
             builder = event.builder
             result = None
             query = event.text
-            if event.query.user_id == uid and query == "@AsenaUserBot":
+            if event.query.user_id == uid and query == "@LostUserBot":
                 rev_text = query[::-1]
                 veriler = (butonlastir(0, sorted(CMD_HELP)))
                 result = await builder.article(
                     f"Lütfen Sadece .yardım Komutu İle Kullanın",
-                    text=f"**🐺 Tanrı Türk'ü Korusun!** [Asena](https://t.me/AsenaUserBot) __Çalışıyor...__\n\n**Yüklenen Modül Sayısı:** `{len(CMD_HELP)}`\n**Sayfa:** 1/{veriler[0]}",
+                    text=f"**🐺 Tanrı Türk'ü Korusun!** [Lost](https://t.me/LostUserBot) __Çalışıyor...__\n\n**Yüklenen Modül Sayısı:** `{len(CMD_HELP)}`\n**Sayfa:** 1/{veriler[0]}",
                     buttons=veriler[1],
                     link_preview=False
                 )
@@ -327,14 +327,14 @@ with bot:
                 )
             else:
                 result = builder.article(
-                    "@AsenaUserBot",
-                    text="""@AsenaUserBot'u kullanmayı deneyin!
+                    "@LostUserBot",
+                    text="""@LostUserBot'u kullanmayı deneyin!
 Hesabınızı bot'a çevirebilirsiniz ve bunları kullanabilirsiniz. Unutmayın, siz başkasının botunu yönetemezsiniz! Alttaki GitHub adresinden tüm kurulum detayları anlatılmıştır.""",
                     buttons=[
-                        [custom.Button.url("Kanala Katıl", "https://t.me/AsenaUserBot"), custom.Button.url(
-                            "Gruba Katıl", "https://t.me/AsenaSupport")],
+                        [custom.Button.url("Kanala Katıl", "https://t.me/LostUserBot"), custom.Button.url(
+                            "Gruba Katıl", "https://t.me/LostSupport")],
                         [custom.Button.url(
-                            "GitHub", "https://github.com/yusufusta/AsenaUserBot")]
+                            "GitHub", "https://github.com/yusufusta/LostUserBot")]
                     ],
                     link_preview=False
                 )
@@ -343,11 +343,11 @@ Hesabınızı bot'a çevirebilirsiniz ve bunları kullanabilirsiniz. Unutmayın,
         @tgbot.on(callbackquery.CallbackQuery(data=compile(b"sayfa\((.+?)\)")))
         async def sayfa(event):
             if not event.query.user_id == uid: 
-                return await event.answer("❌ Hey! Benim mesajlarımı düzenlemeye kalkma! Kendine bir @AsenaUserBot kur.", cache_time=0, alert=True)
+                return await event.answer("❌ Hey! Benim mesajlarımı düzenlemeye kalkma! Kendine bir @LostUserBot kur.", cache_time=0, alert=True)
             sayfa = int(event.data_match.group(1).decode("UTF-8"))
             veriler = butonlastir(sayfa, CMD_HELP)
             await event.edit(
-                f"**🐺 Tanrı Türk'ü Korusun!** [Asena](https://t.me/AsenaUserBot) __Çalışıyor...__\n\n**Yüklenen Modül Sayısı:** `{len(CMD_HELP)}`\n**Sayfa:** {sayfa + 1}/{veriler[0]}",
+                f"**🐺 Tanrı Türk'ü Korusun!** [Lost](https://t.me/LostUserBot) __Çalışıyor...__\n\n**Yüklenen Modül Sayısı:** `{len(CMD_HELP)}`\n**Sayfa:** {sayfa + 1}/{veriler[0]}",
                 buttons=veriler[1],
                 link_preview=False
             )
@@ -355,7 +355,7 @@ Hesabınızı bot'a çevirebilirsiniz ve bunları kullanabilirsiniz. Unutmayın,
         @tgbot.on(callbackquery.CallbackQuery(data=compile(b"bilgi\[(\d*)\]\((.*)\)")))
         async def bilgi(event):
             if not event.query.user_id == uid: 
-                return await event.answer("❌  Hey! Benim mesajlarımı düzenlemeye kalkma! Kendine bir @AsenaUserBot kur.", cache_time=0, alert=True)
+                return await event.answer("❌  Hey! Benim mesajlarımı düzenlemeye kalkma! Kendine bir @LostUserBot kur.", cache_time=0, alert=True)
 
             sayfa = int(event.data_match.group(1).decode("UTF-8"))
             komut = event.data_match.group(2).decode("UTF-8")
@@ -375,7 +375,7 @@ Hesabınızı bot'a çevirebilirsiniz ve bunları kullanabilirsiniz. Unutmayın,
         @tgbot.on(callbackquery.CallbackQuery(data=compile(b"komut\[(.*)\[(\d*)\]\]\((.*)\)")))
         async def komut(event):
             if not event.query.user_id == uid: 
-                return await event.answer("❌ Hey! Benim mesajlarımı düzenlemeye kalkma! Kendine bir @AsenaUserBot kur.", cache_time=0, alert=True)
+                return await event.answer("❌ Hey! Benim mesajlarımı düzenlemeye kalkma! Kendine bir @LostUserBot kur.", cache_time=0, alert=True)
 
             cmd = event.data_match.group(1).decode("UTF-8")
             sayfa = int(event.data_match.group(2).decode("UTF-8"))

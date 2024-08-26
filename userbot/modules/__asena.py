@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# Asena UserBot - Yusuf Usta
+# Lost UserBot - Yusuf Usta
 #
 
 """ UserBot yardım komutu """
@@ -25,7 +25,7 @@ import html
 # ██████ LANGUAGE CONSTANTS ██████ #
 
 from userbot.language import get_value
-LANG = get_value("__asena")
+LANG = get_value("__Lost")
 
 # ████████████████████████████████ #
 
@@ -34,9 +34,9 @@ def deEmojify(inputString):
     return get_emoji_regexp().sub(u'', inputString)
 
 
-@register(outgoing=True, pattern="^.asena(?: |$)(.*)")
-async def asena(event):
-    """ .asena komutu için """
+@register(outgoing=True, pattern="^.Lost(?: |$)(.*)")
+async def Lost(event):
+    """ .Lost komutu için """
     args = event.pattern_match.group(1).lower()
     if args:
         if args in CMD_HELP:
@@ -63,22 +63,22 @@ async def asena(event):
 BOT = "N"
 
 @register(outgoing=True, pattern="^.chatbot ?(.*)")
-async def asena(event):
+async def Lost(event):
     global BOT
     if (event.pattern_match.group(1) == "on" or event.pattern_match.group(1) == "aç" or event.pattern_match.group(1) == "ac"):
         if BOT == "Y":
             return await event.edit("**Chatbot Halihazırda Açık!**")
 
         BOT = "Y"
-        await event.edit("**Asena Yapay Zeka ChatBot Açıldı!**\n**Kullanmak için cümleye** `Asena` **ile başlayın.**")
+        await event.edit("**Lost Yapay Zeka ChatBot Açıldı!**\n**Kullanmak için cümleye** `Lost` **ile başlayın.**")
     elif (event.pattern_match.group(1) == "off" or event.pattern_match.group(1) == "kapa" or event.pattern_match.group(1) == "kapat"):
         if BOT == "N":
             return await event.edit("**Chatbot Halihazırda Kapalı!**")
 
         BOT = "N"
-        await event.edit("**Asena Yapay Zeka ChatBot Kapandı!**")
+        await event.edit("**Lost Yapay Zeka ChatBot Kapandı!**")
     else:
-        await event.edit("**Eksik Parametreler!** \n`.asena chatbot` **Komutunu kullanarak talimatları okuyun.**")
+        await event.edit("**Eksik Parametreler!** \n`.Lost chatbot` **Komutunu kullanarak talimatları okuyun.**")
 
 
 async def translate_to_msg(text_msg, to):
@@ -100,11 +100,11 @@ async def txt(msg):
     if BOT == "Y":
         message = msg.raw_text
         user_id = msg.sender_id
-        if message.startswith("asena") or message.startswith("Asena"):
-            if message.startswith("asena"):
-                message = message.replace("asena", "", 1)
+        if message.startswith("Lost") or message.startswith("Lost"):
+            if message.startswith("Lost"):
+                message = message.replace("Lost", "", 1)
             else:
-                message = message.replace("Asena", "", 1)
+                message = message.replace("Lost", "", 1)
 
             async with aiohttp.ClientSession(connector=aiohttp.TCPConnector(verify_ssl=False)) as session:
                 aftext = await translate_to_msg(deEmojify(message), "en")

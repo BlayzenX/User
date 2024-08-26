@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# Asena UserBot - Yusuf Usta
+# Lost UserBot - Yusuf Usta
 
 
 """ Gereksiz mesajları temizlemek için UserBot modülü (genellikle spam veya ot). """

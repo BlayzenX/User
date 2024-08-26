@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# Asena UserBot - Yusuf Usta
+# Lost UserBot - Yusuf Usta
 
 
 """ Kimin size özel mesaj gönderebileceğini kontrol altına almanızı sağlayan UserBot modülüdür. """
@@ -323,7 +323,7 @@ async def blockpm(block):
         replied_user = await block.client.get_entity(reply.from_id)
         if replied_user.id in BRAIN_CHECKER or replied_user.id in WHITELIST:
             await block.edit(
-                "`Hayır dostum! Asena yöneticisini engellemeyeceğim!!`"
+                "`Hayır dostum! Lost yöneticisini engellemeyeceğim!!`"
             )
             return
 
@@ -347,7 +347,7 @@ async def blockpm(block):
     else:
         if block.chat_id in BRAIN_CHECKER:
             await block.edit(
-                "`Hayır dostum! Asena sahibini engellemeyeceğim!!`"
+                "`Hayır dostum! Lost sahibini engellemeyeceğim!!`"
             )
             return
 

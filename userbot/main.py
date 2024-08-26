@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# Asena UserBot - Yusuf Usta
+# Lost UserBot - Yusuf Usta
 
 """ UserBot başlangıç noktası """
 import importlib
@@ -15,7 +15,7 @@ import requests
 from telethon.tl.types import InputMessagesFilterDocument
 from telethon.errors.rpcerrorlist import PhoneNumberInvalidError
 from telethon.tl.functions.channels import GetMessagesRequest
-from . import BRAIN_CHECKER, LOGS, bot, PLUGIN_CHANNEL_ID, CMD_HELP, LANGUAGE, ASENA_VERSION, PATTERNS
+from . import BRAIN_CHECKER, LOGS, bot, PLUGIN_CHANNEL_ID, CMD_HELP, LANGUAGE, Lost_VERSION, PATTERNS
 from .modules import ALL_MODULES
 import userbot.modules.sql_helper.mesaj_sql as MSJ_SQL
 import userbot.modules.sql_helper.galeri_sql as GALERI_SQL
@@ -120,11 +120,11 @@ def extractCommands(file):
                             KomutStr = Command
                         Komutlar.append(KomutStr)
 
-            # AsenaPY
-            Asenapy = re.search('\"\"\"ASENAPY(.*)\"\"\"', FileRead, re.DOTALL)
-            if not Asenapy == None:
-                Asenapy = Asenapy.group(0)
-                for Satir in Asenapy.splitlines():
+            # LostPY
+            Lostpy = re.search('\"\"\"LostPY(.*)\"\"\"', FileRead, re.DOTALL)
+            if not Lostpy == None:
+                Lostpy = Lostpy.group(0)
+                for Satir in Lostpy.splitlines():
                     if (not '"""' in Satir) and (':' in Satir):
                         Satir = Satir.split(':')
                         Isim = Satir[0]
@@ -145,8 +145,8 @@ def extractCommands(file):
 try:
     bot.start()
     idim = bot.get_me().id
-    asenabl = requests.get('https://gitlab.com/Quiec/asen/-/raw/master/asen.json').json()
-    if idim in asenabl:
+    Lostbl = requests.get('https://gitlab.com/Quiec/asen/-/raw/master/asen.json').json()
+    if idim in Lostbl:
         bot.disconnect()
 
     # ChromeDriver'ı Ayarlayalım #
@@ -160,7 +160,7 @@ try:
 
     # PLUGIN MESAJLARI AYARLIYORUZ
     PLUGIN_MESAJLAR = {}
-    ORJ_PLUGIN_MESAJLAR = {"alive": "`Tanrı Türk'ü Korusun. 🐺 Asena çalışıyor.`", "afk": f"`{str(choice(AFKSTR))}`", "kickme": "`Güle Güle ben gidiyorum `🤠", "pm": UNAPPROVED_MSG, "dızcı": str(choice(DIZCILIK_STR)), "ban": "{mention}`, yasaklandı!`", "mute": "{mention}`, sessize alındı!`", "approve": "{mention}`, bana mesaj gönderebilirsin!`", "disapprove": "{mention}`, artık bana mesaj gönderemezsin!`", "block": "{mention}`, engellendin!`"}
+    ORJ_PLUGIN_MESAJLAR = {"alive": "`Tanrı Türk'ü Korusun. 🐺 Lost çalışıyor.`", "afk": f"`{str(choice(AFKSTR))}`", "kickme": "`Güle Güle ben gidiyorum `🤠", "pm": UNAPPROVED_MSG, "dızcı": str(choice(DIZCILIK_STR)), "ban": "{mention}`, yasaklandı!`", "mute": "{mention}`, sessize alındı!`", "approve": "{mention}`, bana mesaj gönderebilirsin!`", "disapprove": "{mention}`, artık bana mesaj gönderemezsin!`", "block": "{mention}`, engellendin!`"}
 
     PLUGIN_MESAJLAR_TURLER = ["alive", "afk", "kickme", "pm", "dızcı", "ban", "mute", "approve", "disapprove", "block"]
     for mesaj in PLUGIN_MESAJLAR_TURLER:
@@ -237,8 +237,8 @@ for module_name in ALL_MODULES:
     imported_module = import_module("userbot.modules." + module_name)
 
 LOGS.info("Botunuz çalışıyor! Herhangi bir sohbete .alive yazarak Test edin."
-          " Yardıma ihtiyacınız varsa, Destek grubumuza gelin t.me/AsenaSupport")
-LOGS.info(f"Bot sürümünüz: Asena {ASENA_VERSION}")
+          " Yardıma ihtiyacınız varsa, Destek grubumuza gelin t.me/LostSupport")
+LOGS.info(f"Bot sürümünüz: Lost {Lost_VERSION}")
 
 """
 if len(argv) not in (1, 3, 4):

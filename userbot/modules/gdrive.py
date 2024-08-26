@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# Asena UserBot - Yusuf Usta
+# Lost UserBot - Yusuf Usta
 
 
 import asyncio
@@ -173,7 +173,7 @@ async def upload_dir_to_gdrive(event):
         # Yetkilendirir, dosya parametrelerini edinir, dosyayı uploadlar ve URL'yi indirme için paylaşır.
         # Öncelikle alt dizin oluşturur.
         dir_id = await create_directory(
-            http, os.path.basename(os.path.abspath(input_str)), parent_id)
+            http, os.path.bLostme(os.path.abspath(input_str)), parent_id)
         await DoTeskWithDir(http, input_str, event, dir_id)
         dir_link = "https://drive.google.com/folderview?id={}".format(dir_id)
         await event.edit(f"Google Drive bağlantın [burada]({dir_link})")
@@ -291,7 +291,7 @@ async def upload_file(http, file_path, file_name, mime_type, event, parent_id):
     media_body = MediaFileUpload(file_path, mimetype=mime_type, resumable=True)
     body = {
         "title": file_name,
-        "description": "Asena UserBot kullanılarak yüklendi.",
+        "description": "Lost UserBot kullanılarak yüklendi.",
         "mimeType": mime_type,
     }
     if parent_id:
